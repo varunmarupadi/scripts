@@ -1,0 +1,9 @@
+escape ^tt
+
+defscrollback 10240
+startup_message off
+hardstatus on
+hardstatus alwayslastline
+#hardstatus string '%{= kG}%H:%{w} %= %?%-Lw%?%{G}(%n%f %t%?(%u)%?%)%{w}%?%+Lw%?%?%= %Y%m%d %c'
+hardstatus string '%{= kG}%H:%{w} %= %?%-Lw%?%{G}(%n %t%?(%u)%?)%{w}%?%+Lw%?%?%= %Y%m%d %c'
+vbell off
