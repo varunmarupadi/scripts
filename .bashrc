@@ -95,10 +95,6 @@ fi
 
 alias e='emacsclient -nc'
 alias enw='emacsclient -tc'
-alias gtags="/home/build/nonconf/google3/tools/tags/gtags.sh"
-alias prodaccess='prodaccess -g'
-alias p='prodaccess -g'
-alias ge='git5 export --sq --tap_project=datascape,plx_testing --tap_options=email,detach'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -122,19 +118,8 @@ export EDITOR='emacsclient -c'
 export PATH=$PATH:~/bin:~/projs/gcc-arm/bin
 
 export P4CONFIG=.p4config
-export P4DIFF="/google/src/files/head/depot/google3/devtools/scripts/p4diff -w"
-export P4MERGE=/home/build/public/eng/perforce/mergep4.tcl 
 export P4EDITOR=$EDITOR
 
 # turn off XON/XOFF control
 stty -ixon
 stty -ixoff
-
-export GOOGLE3="/usr/local/google/home/varunmar/code/google3"
-alias ds="cd $GOOGLE3/datawarehouse/datascape"
-alias t="cd $GOOGLE3/datawarehouse/testing"
-
-function client {
-  CLIENT=$1;
-  cd ~/clients/$CLIENT 2>/dev/null && cd google3/storage/f1 2>/dev/null
-}
